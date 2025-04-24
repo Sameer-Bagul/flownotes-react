@@ -1,69 +1,55 @@
-# Welcome to your Lovable project
+# AI LLM Roadmap Maker
 
-## Project info
+AI LLM Roadmap Maker is a MERN stack application designed to help users create and visualize roadmaps for AI and LLM (Large Language Model) projects. The app integrates APIs like Grok, OpenAI, Gemini, and others to enhance functionality and provide a seamless user experience.
 
-**URL**: https://lovable.dev/projects/4470f2ac-931e-4123-b8a5-cedb40bc0d2f
+## Features
 
-## How can I edit this code?
+- **Roadmap Creation**: Easily create and customize AI/LLM project roadmaps.
+- **API Integration**: Leverage APIs such as Grok, OpenAI, and Gemini for advanced features.
+- **Interactive UI**: User-friendly interface built with React.
+- **Backend Support**: Robust backend powered by Node.js and Express.
+- **Database**: MongoDB for efficient data storage and retrieval.
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+- **Frontend**: React.js
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **APIs**: Grok, OpenAI, Gemini, and more
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/4470f2ac-931e-4123-b8a5-cedb40bc0d2f) and start prompting.
+## Installation
 
-Changes made via Lovable will be committed automatically to this repo.
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/Sameer-Bagul/flownotes-react.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd flownotes-react
+    ```
+3. Install dependencies:
+    ```bash
+    npm install
+    ```
+4. Start the development server:
+    ```bash
+    npm start
+    ```
 
-**Use your preferred IDE**
+## Usage
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+1. Open the app in your browser at `http://localhost:3000`.
+2. Use the intuitive interface to create and manage AI/LLM roadmaps.
+3. Integrate APIs for enhanced functionality.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Contributing
 
-Follow these steps:
+Contributions are welcome! Please fork the repository and submit a pull request with your changes.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## License
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Repository
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/4470f2ac-931e-4123-b8a5-cedb40bc0d2f) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+[GitHub Repository](https://github.com/Sameer-Bagul/flownotes-react.git)
