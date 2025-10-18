@@ -1,28 +1,13 @@
-
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
-import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  server: {
-    host: "::",
-    port: 8080,
-    allowedHosts: [
-      '4470f2ac-931e-4123-b8a5-cedb40bc0d2f.lovableproject.com',
-    ],
-  },
-  plugins: [
-    react(),
-    mode === 'development' &&
-    componentTagger(),
-  ].filter(Boolean),
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
-    },
-  },
+  root: path.resolve(__dirname, "client"),
+  publicDir: path.resolve(__dirname, "client/public"),
   build: {
+    outDir: path.resolve(__dirname, "dist/public"),
+    emptyOutDir: true,
     rollupOptions: {
       external: [
         '@tiptap/suggestion',
@@ -35,6 +20,14 @@ export default defineConfig(({ mode }) => ({
         'ace-builds/src-noconflict/ext-language_tools'
       ]
     }
+  },
+  plugins: [
+    react(),
+  ].filter(Boolean),
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./client/src"),
+    },
   },
   worker: {
     format: 'es'

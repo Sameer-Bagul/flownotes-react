@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation } from "wouter";
 import { ArrowLeft } from "lucide-react";
 
 const shortcuts = [
@@ -15,18 +15,18 @@ const shortcuts = [
 ];
 
 const Shortcuts = () => {
-  const navigate = useNavigate();
+  const [, setLocation] = useLocation();
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
-        navigate("/");
+        setLocation("/");
       }
     };
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [navigate]);
+  }, [setLocation]);
 
   return (
     <div className="p-8 max-w-4xl mx-auto min-h-screen bg-background/30 backdrop-blur-md">

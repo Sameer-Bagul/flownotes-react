@@ -14,7 +14,7 @@ import {
   Edge,
 } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
-import { Link } from 'react-router-dom';
+import { Link } from 'wouter';
 import { Button } from "@/components/ui/button";
 import nodeTypes from '../components/nodeTypes';
 import { toast } from "sonner";
