@@ -18,6 +18,7 @@ export const AI_PROVIDERS: Record<AIProvider, AIProviderConfig> = {
     icon: <Bot className="h-4 w-4" />,
     defaultUrl: "http://localhost:11434",
     modelOptions: [
+      { value: "mistral", label: "Mistral" },
       { value: "llama3:8b", label: "Llama 3 8B" },
       { value: "mistral:7b", label: "Mistral 7B" },
       { value: "gemma:7b", label: "Gemma 7B" }
